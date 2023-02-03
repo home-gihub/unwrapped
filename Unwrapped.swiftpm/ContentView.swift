@@ -6,8 +6,8 @@ struct ContentView: View {
             TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
                 ScrollView {
                     GroupBox(label: Text("About unwrapped")) {
-                        Text("unwrapped by Theo wilkins")
-                        Link(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=URL@*/URL(string: "https://www.apple.com")!/*@END_MENU_TOKEN@*/) {
+                        Text("unwrapped by Home-github")
+                        Link(destination: URL(string: "https://github.com/home-gihub/unwrapped")) {
                             Text("View the source on github")
                         }
                     }
