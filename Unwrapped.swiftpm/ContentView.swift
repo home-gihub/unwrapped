@@ -7,7 +7,7 @@ struct ContentView: View {
                 ScrollView {
                     GroupBox(label: Text("About unwrapped")) {
                         Text("unwrapped by Home-github")
-                        Link(destination: URL(string: "https://github.com/home-gihub/unwrapped")) {
+                        Link(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=URL@*URL(string: "https://github.com/home-gihub/unwrapped")!/*@END_MENU_TOKEN@*/) {
                             Text("View the source on github")
                         }
                     }
