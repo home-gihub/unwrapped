@@ -3,11 +3,11 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
+            TabView() {
                 ScrollView {
                     GroupBox(label: Text("About unwrapped")) {
                         Text("unwrapped by Home-github")
-                        Link(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=URL@*URL(string: "https://github.com/home-gihub/unwrapped")!/*@END_MENU_TOKEN@*/) {
+                        Link(destination: URL(string: "https://github.com/home-gihub/unwrapped")) {
                             Text("View the source on github")
                         }
                     }
@@ -133,7 +133,7 @@ struct ContentView: View {
                     Image(systemName: "apps.iphone")
                 } }.tag(1)
                 VStack {
-                    TextField("Quickly find your saved repos", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                    TextField("Quickly find your saved repos")
                     GroupBox(label: Text("Repos")) {
                         ScrollView {
                             GroupBox() {
@@ -154,7 +154,7 @@ struct ContentView: View {
                 } }.tag(2)
                 VStack {
                     GroupBox(label: Text("Installed tweaks")) {
-                        TextField("find em' tweaks fast just tap here", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                        TextField("find em' tweaks fast just tap here")
                         GroupBox() {
                             HStack {
                                 Image(systemName: "appclip")
@@ -172,7 +172,7 @@ struct ContentView: View {
                     }
                     
                     GroupBox(label: Text("Installed apps")) {
-                        TextField("find em' apps fast just tap here", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                        TextField("find em' apps fast just tap here")
                         GroupBox(label: Text("")) {
                             HStack {
                                 Image(systemName: "app.badge.fill")
